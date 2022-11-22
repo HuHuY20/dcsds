@@ -565,7 +565,7 @@ p.text-report-tec-3 {
   display: flex;
   align-items: start;
   justify-content: center;
-  padding-top: 27px;
+  padding-top: 0px;
 }
 
 .plyr--audio .plyr__controls {
@@ -582,12 +582,6 @@ p.text-report-tec-3 {
 }
 
 .audio-mp3-qurran {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin: 35px -7px 6px -7px;
   position: relative;
 }
 
@@ -689,7 +683,16 @@ video.vidaoDsi {
   width: 453px;
   height: 810px;
   position: relative;
-  margin-bottom: 24px;
+  padding: 27px 0 0px 0;
+  margin: 27px 0 0px 0;
+}
+
+.vide0Scroll:nth-child(1) {
+  margin: 0px;
+}
+
+.vide0Scroll:last-child {
+  margin-bottom: 128px;
 }
 
 .shareXvideo {
@@ -1158,4 +1161,44 @@ p.rebor-text2 {
   i.fa-brands.fa-tiktok {
     font-size: 19px;
   }
+}
+.audio-mp3-qurran, .vide0Scroll {
+  max-width: 100%;
+  height: 100vh;
+}
+
+.audio-mp3-qurran {
+  overflow: auto;
+  -ms-scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vide0Scroll {
+  scroll-snap-align: start;
+}
+
+.vide0Scroll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.audio-mp3-qurran::-webkit-scrollbar {
+  display: none;
+}
+
+.audio-mp3-qurran::-webkit-scrollbar-track {
+  display: none;
+}
+
+.audio-mp3-qurran::-webkit-scrollbar-thumb {
+  display: none;
+}
+
+.audio-mp3-qurran::-webkit-scrollbar-thumb:hover {
+  display: none;
 }/*# sourceMappingURL=videos.css.map */
